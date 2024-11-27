@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background: #626662;
+  color: aliceblue;
+}
+
+header {
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  background-color: #444; /* Adiciona uma cor de fundo */
+}
+
+.container-h {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px; /* Ajuste no espaçamento entre os elementos */
+  align-items: center;
+  padding: 5rem;
+  text-align: center;
+}
+
+.header-l {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header-l h3 {
+  font-size: 26px;
+  color: #ffcc00; /* Cor diferente para o subtítulo */
+}
+
+.header-l h1 {
+  font-size: 36px;
+  margin: 20px 0;
+  font-weight: bold;
+  color: #fff;
+}
+
+.header-l p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.btn {
+  background-color: #ffcc00;
+  padding: 10px 20px;
+  color: #333;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #e6b800;
+}
+
+.header-r .hero-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+button {
+  display: block;
+  margin: 30px auto;
+  padding: 10px 20px;
+  background-color: #4ca7af;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #3e8e8e;
+}
+
+@media (max-width: 768px) {
+  .container-h {
+    grid-template-columns: 1fr; /* Para telas menores, as colunas vão para uma única linha */
+    padding: 2rem;
+  }
+
+  .header-l h1 {
+    font-size: 28px;
+  }
+
+  .header-l p {
+    font-size: 16px;
+  }
+}
